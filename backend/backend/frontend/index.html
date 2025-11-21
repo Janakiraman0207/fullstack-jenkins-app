@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lumen Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-left">
+      <div class="logo-circle">Λ</div>
+      <span class="brand">LUMEN STORE</span>
+    </div>
+    <div class="nav-right">
+      <button class="nav-link active">Store</button>
+      <button class="nav-link">Deals</button>
+      <button class="nav-link">Support</button>
+      <div class="cart-pill">
+        <span class="cart-label">Cart</span>
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Premium Tech Essentials</p>
+        <h1>Upgrade your setup in one place.</h1>
+        <p class="hero-sub">
+          Curated gear for developers, gamers and creators. Dark, minimal and built to last.
+        </p>
+        <div class="hero-actions">
+          <button class="primary-btn">Shop featured</button>
+          <button class="ghost-btn">View accessories</button>
+        </div>
+        <div class="hero-meta">
+          <span>2–4 day delivery</span>
+          <span>Secure checkout</span>
+          <span>4.7 average rating</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-glow"></div>
+        <div class="hero-product">
+          <p class="pill">Featured</p>
+          <h2>Luxe Wireless Headphones</h2>
+          <p class="hero-product-copy">
+            Deep bass, ANC and 30h battery in a compact, foldable design made for focus.
+          </p>
+          <div class="hero-product-footer">
+            <span class="hero-price">₹12,999</span>
+            <span class="hero-tag">Ships in 24 hours</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="catalog-header">
+        <div>
+          <h2>Explore the collection</h2>
+          <p class="catalog-sub">
+            Tap a product to view details and add it to your cart.
+          </p>
+        </div>
+      </div>
+
+      <div id="products-grid" class="grid"></div>
+      <p id="loading" class="muted">Loading products...</p>
+    </section>
+
+    <aside class="cart-panel">
+      <h3>Your cart</h3>
+      <ul id="cart-list" class="cart-list"></ul>
+      <div class="cart-summary">
+        <div class="row total">
+          <span>Total</span>
+          <span id="cart-total">₹0</span>
+        </div>
+        <button class="primary-btn full">Proceed to checkout</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Lumen Store</span>
+    <span>Built for Jenkins + AWS practice</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
